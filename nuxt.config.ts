@@ -24,7 +24,6 @@ export default defineNuxtConfig({
     //         ]
     //     }
     // },
-    ssr: false,
 
     modules: [
         '@nuxt/image',
@@ -32,7 +31,6 @@ export default defineNuxtConfig({
         '@pinia/nuxt',
         '@nuxtjs/i18n',
         '@nuxt/fonts',
-        '@nuxtjs/vuetify',
         (_options, nuxt) => {
             nuxt.hooks.hook('vite:extendConfig', (config) => {
                 // @ts-expect-error
