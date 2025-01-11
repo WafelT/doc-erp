@@ -41,10 +41,22 @@ const modulesBtns: ModuleBtn[] = [
         icon: 'mdi-clipboard-text-outline',
     },
     {
-        name: 'Структура',
+        name: 'Архитектура',
         color: '#f1c40f',
         route: 'structure',
         icon: 'mdi-folder-multiple',
+    },
+    {
+        name: 'Компоненты',
+        color: '#27ae60',
+        route: 'components',
+        icon: 'mdi-cube-outline',
+    },
+    {
+        name: 'Стили',
+        color: '#7d3c98',
+        route: 'styles',
+        icon: 'mdi-brush',
     },
 ]
 const iconSize = 32

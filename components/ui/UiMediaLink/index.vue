@@ -4,10 +4,6 @@
     </a>
 </template>
 
-<style lang="scss">
-@use 'index.scss';
-</style>
-
 <script setup lang="ts">
 // @ts-ignore
 const props = defineProps<{
@@ -15,3 +11,7 @@ const props = defineProps<{
     to: string;
 }>()
 </script>
+
+<style lang="scss">
+@use 'index.scss';
+</style>
