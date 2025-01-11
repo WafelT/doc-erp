@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    padding: 25px 0 0 0;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 35px 50px 45px;
+        border-radius: 20px;
+
+        background: linear-gradient(-45deg, rgba(var(--v-theme-primary800)), rgba(var(--v-theme-primary)));
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+
+        &-logo {
+            display: flex;
+            transition: transform .1s ease, -webkit-transform .1s ease, -o-transform .1s ease;
+
+            img {
+                width: 120px;
+                height: auto;
+            }
+
+            &:active {
+                transform: scale(.9);
+            }
+        }
+
+        &-info {
+            display: flex;
+
+            h1 {
+                color: rgba(var(--v-theme-grey25));
+
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

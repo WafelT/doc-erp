@@ -1,0 +1,19 @@
+.ui-media-link {
+    display: flex;
+    width: fit-content;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 143%;
+    
+    color: #0E29BB;
+    
+    &:hover {
+        img {
+            transform: scale(1.01);
+        }
+    }
+    &:active {
+        img { transform: scale(0.99) }
+    }
+}
