@@ -1,0 +1,30 @@
+.navigators {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        grid-gap: 20px;
+    }
+
+    &__item {
+        min-width: 80px;
+        width: 80px;
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        background-color: rgba(var(--v-theme-grey100), 0.8);
+
+        transition: .2s ease background-color, .1s ease transform;
+
+        &:hover { background-color: rgba(var(--v-theme-grey300), 0.8); }
+        &:active { transform: scale(.9) }
+    }
+}

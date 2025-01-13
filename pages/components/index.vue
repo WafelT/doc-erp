@@ -42,8 +42,12 @@ import UiVideo from '~/components/ui/UiVideo' // @ts-ignore
 import UiStringColorSchema from '~/components/ui/UiStringColorSchema' // @ts-ignore
 
 const structureExample = 
-`ResourceAgent/ <= Компонента
+`ResourceAgent/
 ├── components/
+│   └── Card/
+│       ├── index.scss
+│       ├── index.vue
+│       └── types.ts
 ├── composables/
 ├── index.scss
 ├── index.vue

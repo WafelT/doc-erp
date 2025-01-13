@@ -4,6 +4,7 @@
             class="ui-code" :rows="rowCount" 
             cols="30" disabled
             :value="content"
+            :style="`font-family: Source Code Pro, monospace`"
         >
         </textarea>
     </client-only>
