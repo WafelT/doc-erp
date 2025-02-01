@@ -1,8 +1,8 @@
 <template>
     <div class="ui-string-color-schema">
-        <div class="ui-string-color-schema__string">
+        <div :class="{ 'ui-string-color-schema__string': true, '--dark-area': isDarkMode }">
             <h3 v-for="(item, index) in items" :key="index" :style="{ color: item.color }">
-                {{ item.textPart }}
+                {{ item.textPart }} <template v-if="isUsingSpaces && (index + 1 !== items.length)">‎ </template>
             </h3>   
         </div>
         <div class="ui-string-color-schema__schema">
@@ -20,6 +20,8 @@
 <script lang="ts" setup>
 // @ts-ignore
 defineProps<{
+    isDarkMode: boolean;
+    isUsingSpaces: boolean;
     items: Array<{
         color: string;
         textPart: string;

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     app: {
         head: {
+            title: 'Документация',
             link: [
                 {
                     rel: 'stylesheet',

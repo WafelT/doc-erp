@@ -58,6 +58,12 @@ const modulesBtns: ModuleBtn[] = [
         route: 'styles',
         icon: 'mdi-brush',
     },
+    {
+        name: 'GIT Managment',
+        color: '#dc7633',
+        route: 'git-managment',
+        icon: 'mdi-gitlab',
+    },
 ]
 const iconSize = 32
 const iconSizeContainer = iconSize * 2
